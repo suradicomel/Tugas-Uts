@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek Uts</title>
+    <title>Login Sistem Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="login-container">
+        <h2>Login Sistem Mahasiswa</h2>
+        <form action="login.php" method="POST" onsubmit="return validateForm()">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan username">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan password">
+            
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
 </body>
 </html>
